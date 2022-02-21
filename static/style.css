@@ -1,0 +1,12 @@
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    display: inline;
+}
+
+h1 a {
+    color: var(--cfg);
+    text-decoration: none;
+}
