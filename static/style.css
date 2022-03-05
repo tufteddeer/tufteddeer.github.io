@@ -10,3 +10,11 @@ h1 a {
     color: var(--cfg);
     text-decoration: none;
 }
+
+figure {
+    width: 150px;
+}
+
+article figure figcaption:before {
+	content: none;
+}
