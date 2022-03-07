@@ -9,7 +9,7 @@
 
 {% block content %}
 
-    <h1></h1>
+    <h1>Category: {{ category }} </h1>
         {% for post in posts_in_category %}
         <li> <a href={{post.meta.rendered_to}}> {{post.meta.header.title}} </a></li>
 
