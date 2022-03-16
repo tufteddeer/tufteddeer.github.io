@@ -6,18 +6,21 @@ My site
 {% block content %}
     <h2>Posts:</h2>
         
-    <ul>
+
         {% for item in posts_meta %}
-            <li>
+
+            <div class="card">
                 <a href={{item.rendered_to}}>
 
                     {% if item.header.title is defined %}
-                        {{ item.header.title}}
+                        <h4>{{ item.header.title}}</h4>
                     {% else %}
                         {{ item.source_file }}
                     {% endif %}
                 </a>
-            </li>
+
+                <p> {{ item.preview_text }} </p>
+            </div>
         {% endfor %}
-    </ul>
+
 {% endblock content %}
