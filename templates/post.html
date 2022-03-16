@@ -15,6 +15,15 @@
                 {{ header.date | date(format="%d.%m.%Y") }}
             {% endif %}
         </span>
+            <br>
+            <span><b>Content</b></span>
+            {{ make_toc(
+                open_list = "<ul>",
+                close_list = "</ul>",
+                open_list_item = "<li>",
+                close_list_item = "</li>",
+                skip_first = true,
+            ) }}
 
         <article>
             
