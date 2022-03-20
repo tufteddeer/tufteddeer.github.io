@@ -7,6 +7,12 @@
 {% endblock title %}
 {% block content %}
 
+{% if header.draft is defined and header.draft == true%}
+        <blockquote>
+            This post is a draft
+        </blockquote>
+{% endif %}
+
 <div class="row">
     <div class="col">
         
