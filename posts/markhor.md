@@ -19,6 +19,8 @@ I also wrote a [GitHub action](https://github.com/tufteddeer/markhor-action) tha
 
 An example (the repository for this site) can be found [here](https://github.com/tufteddeer/tufteddeer.github.io).
 
+The Markhor repository can be found [here](https://github.com/tufteddeer/markhor).
+
 Technologies I used to build this project:
 * Rust
 * Docker
