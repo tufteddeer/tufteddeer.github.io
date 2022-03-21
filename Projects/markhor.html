@@ -46,24 +46,29 @@
         </span>
             <br>
             <span><b>Content</b></span>
-            
+            <ul><li>Background</li><li>Features</li><li>Technologies used</li></ul>
 
         <article>
             
             <h1>Markhor</h1>
 <p>Markhor is a static site generator written in Rust. </p>
+<h2>Background</h2>
 <p>I procrastinated building my own portfolio website for years now. In early 2022 I decided to delay it further when I started working on <a href="https://github.com/tufteddeer/markhor">Markhor</a>. The idea was to build my own static site generator that I could use for my website.</p>
-<p>The idea of a static site generator is simple: You define the layout of your site once as a set of templates (in this case <a href="https://tera.netlify.app/">Tera</a>). Then you write your content, blog posts, or whatever in some form of human-friendly markup language (markdown, in our case). From this, Markhor generates html files that can be statically served from any webserver, without any database or CMS. The clean separation of content and layout makes it easy to add new content without touching the style and vice versa. Markhor also takes responsibility of generating metadata and automatically builds a table of contents or preview texts for each individual post.</p>
-<p>The first usable version that could convert markdown to html and render it into a Tera template was made during the first session, which was really motivating. Since then I implemented a lot more features for the resulting website, as well as an embeded web server to preview the result, including automatic rebuilds when the input files are changed.</p>
-<p>I also wrote a <a href="https://github.com/tufteddeer/markhor-action">GitHub action</a> that builds a website from a GitHub repository on their CI/CD using Markhor. The result can then be deployed using GitHub pages.</p>
+<p>The idea of a static site generator is simple: You define the layout of your site once as a set of templates (in this case <a href="https://tera.netlify.app/">Tera</a>). Then you write your content, blog posts, or whatever in some form of human-friendly markup language (markdown, in our case). From this, Markhor generates html files that can be statically served from any webserver, without any database or CMS. The clean separation of content and layout makes it easy to add new content without touching the style and vice versa.</p>
+<h2>Features</h2>
+<p>Besides html generation, Markhor also takes responsibility of generating metadata and automatically builds a table of contents or preview texts for each individual post, as well of a table of contents for the site.
+The first usable version that could convert markdown to html and render it into a Tera template was made during the first session, which was really motivating. Since then I implemented a lot more features for the resulting website, as well as an embeded web server to preview the result, including automatic rebuilds when the input files are changed.</p>
+<p>I also made a <a href="https://github.com/tufteddeer/markhor-action">GitHub action</a> that builds a website from a GitHub repository on their CI/CD using Markhor. The result can then be deployed using GitHub pages.</p>
 <p>An example (the repository for this site) can be found <a href="https://github.com/tufteddeer/tufteddeer.github.io">here</a>.</p>
-<p>Technologies I used to build this project:</p>
+<p>The Markhor repository with a detailed feature overview can be found <a href="https://github.com/tufteddeer/markhor">here</a>.</p>
+<h2>Technologies used</h2>
 <ul>
 <li>Rust</li>
 <li>Docker</li>
 <li>GitHub actions for tests and builds, as well as implementing the <a href="https://github.com/tufteddeer/markhor-action">markhor-action</a></li>
 <li>git</li>
 </ul>
+<p>Some Rust <a href="https://github.com/tufteddeer/markhor/blob/main/Cargo.toml">libraries</a>, the most important ones being <a href="https://crates.io/crates/pulldown-cmark">pulldown-cmark</a> and <a href="https://crates.io/crates/tera">Tera</a>.</p>
 
         </article>
 
