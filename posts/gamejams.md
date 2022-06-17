@@ -10,6 +10,8 @@ Together with some friends, I sometimes participate in Game Jams. As team _barel
 
 ## Slimecaves
 
+> A room-based roguelite prototype with remarkably crisp graphics, good audio and fluid movement. While there's not much here right now (one monster type, one weapon and one armour upgrade, a handful of temporary buff potions), it already looks promising. ~ Judge feedback
+
 We made Slimecaves during the 7 day Roguelike jam in 2021. It is the first game we made in more than 48 hours and the extra time allowed us to improve our project management, git and general development workflow.
 
 In Slimecaves, players move through rooms they create dynamically by breaking walls. They can fight slimes and improve their attributes by finding and equipping items.
