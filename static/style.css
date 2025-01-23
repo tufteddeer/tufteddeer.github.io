@@ -1,20 +1,8 @@
-.category-list {
-    list-style: none;
-}
-
-.category-list li {
-    display: inline;
+video {
+    width: 100%;
 }
 
 h1 a {
-    color: var(--cfg);
+    color: white;
     text-decoration: none;
-}
-
-figure {
-    width: 150px;
-}
-
-article figure figcaption:before {
-	content: none;
 }

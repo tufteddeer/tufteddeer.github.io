@@ -9,7 +9,7 @@ TuftedDeer
 
         {% for item in posts_meta %}
 
-            <div class="card">
+            <article>
                 <a href={{item.rendered_to}}>
 
                     {% if item.header.title is defined %}
@@ -20,7 +20,7 @@ TuftedDeer
                 </a>
 
                 <p> {{ item.preview_text }} </p>
-            </div>
+            </article>
         {% endfor %}
 
 {% endblock content %}

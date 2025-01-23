@@ -13,8 +13,8 @@
         </blockquote>
 {% endif %}
 
-<div class="row">
-    <div class="col">
+<div>
+    <div>
         
         <span>
             {% if header.date is defined %}
@@ -37,14 +37,18 @@
         </article>
 
     </div>
-    <div class="col-3" style="width: 20%">
-        <h5>Latest</h5>
-      <ul>
+    <div>
+        <h5>Latest posts</h5>
+        <aside>
+      <nav>
+        <ul>
         {% for item in posts_meta %}
             <li> <a href=/{{item.rendered_to}}> {{item.header.title}} </a></li>
 
         {% endfor %}
       </ul>
+      </nav>
+        </aside>
     </div>
 </div>
 

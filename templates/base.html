@@ -3,32 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>{%block title %} {%endblock title %}</title>
-        <link rel="stylesheet" href="/static/classless.css">
         <link rel="stylesheet" href="/static/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+        >
     </head>
     <body>
         <header>
-            <h1><a href="/"> TuftedDeer</a></h1>
-            <ul class="category-list">
+            <h1><a href="/">TuftedDeer</a></h1>
+            <nav>
+            <ul>
             
-            <a href="https://github.com/tufteddeer"> <button>GitHub</button> </a>
-            &nbsp;
                 {% for cat in post_categories %}
                     <li>
-                        <a href="/{{ cat }}.html"> <button>{{ cat }}</button> </a>
-                        &nbsp;
+                        <a href="/{{ cat }}.html"> {{ cat }} </a>
+                        
                     </li>   
                 {% endfor %}
 
             </ul>
+            <ul>
+            <li>
+                <a href="https://github.com/tufteddeer"> GitHub </a>
+            </li>
+            </ul>
+            </nav>
             
         </header>
         
-        
+        <main>
         {% block content %}
 
         {% endblock content %}
-
-        <footer>Made with ❤️, generated with <a href="https://github.com/tufteddeer/markhor">markhor</a>, styled with <a href="https://classless.de">classless.css</a> </footer>
+        
+        
+        </main>
+        <footer>Made with ❤️, generated with <a href="https://github.com/tufteddeer/markhor">markhor</a>, styled with <a href="https://picocss.com">Pico css</a> </footer>
     </body>
 </html>
