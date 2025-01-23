@@ -1,7 +1,7 @@
 ---
 title = "Gamejams"
 date = "2022-02-03"
-category = "Games"
+category = "Projects"
 ---
 # Games
 

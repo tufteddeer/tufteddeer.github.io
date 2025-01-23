@@ -1,7 +1,7 @@
 ---
 title = "Balltastic"
 date = "2022-05-18"
-category = "Games"
+category = "Projects"
 ---
 
 # Balltastic
