@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>
     
-        StreamTime (Twitch.tv streaming schedules)
+        Audiothek feed
     
 </title>
         <link rel="stylesheet" href="/static/style.css">
@@ -46,31 +46,32 @@
         
         <span>
             
-                12.06.2022
+                31.08.2023
             
         </span>
             <br>
             <span><b>Content</b></span>
-            <ul><li>Technologies used</li></ul>
+            <ul><li>About</li><li>Technologies used</li></ul>
 
         <article>
             
-            <h1>StreamTime</h1>
-<p>StreamTime lets <a href="https://twitch.tv">Twitch</a> users see the planned streams of their favourite streamers on a single page.</p>
-<p><a href="https://www.stream-time.xyz/">Visit the website</a></p>
-<p>Code on <a href="https://github.com/StreamingTime/StreamTime">GitHub</a></p>
-<p>StreamTime was built with a friend for a university course on functional frontend development using <a href="https://elm-lang.org">Elm</a>.</p>
-<p>Our website allows users to see the schedules of multiple streamers in one place, without the need to visit each profile individually.
-Users can login using their Twitch account and see the scheduled broadcasts for streamers they follow as well as past recordings.</p>
-<p>We use the Twitch login flow and the data from the official <a href="https://dev.twitch.tv/docs/api/reference">Twitch API</a>.</p>
-<p>During development, we did not only implement basic HTTP requests, but had to handle more advanced scenarios like paginated endpoints and different representation of timestamps in the Twitch API responses and Elm. These are explained <a href="https://github.com/StreamingTime/StreamTime#miscellaneous">here</a> in more detail.</p>
-<p>The project was really fun to work on and I am happy to see that this is a university project that actually provides a value to its users. Working with Elm has tought me a lot about the benefits of functional programming. I have never worked with a web frontend technology that I felt so confident with, even when refactoring large parts of the codebase.</p>
+            <h1>Audiothek-feed</h1>
+<p>Atom feed generator for the ARD Audiothek.</p>
+<h2>About</h2>
+<p>The <a href="https://www.ardaudiothek.de">ARD Audiothek</a> is the audio content platform of the german public broadcasting service ARD.
+Unfortunately they do not provide an RSS or Atom feed for their shows.</p>
+<p>What they do provide is a GraphQL endpoint, so i quickly built this app that generates feeds.</p>
+<p>The frontend provides an input field where the show id or url can be entered.
+The generated feed url can be used with any Atom compatible podcast software.</p>
+<figure>
+    <img src="/static/audiothekfeed.png" width="75%">
+</figure>
+<p>The backend is written in Rust using axum.
+For the frontend I used htmx and tailwindcss.</p>
+<p>A Nix flake is used to build the backend and frontend in separate derivations as well as the Docker image.</p>
+<p><a href="https://github.com/tufteddeer/audiothek-feed">Repository and instructions</a></p>
 <h2>Technologies used</h2>
-<ul>
-<li><a href="https://elm-lang.org/">Elm</a></li>
-<li><a href="https://v2.tailwindcss.com/">Tailwind CSS</a></li>
-<li>Git</li>
-</ul>
+<p>Rust, Docker, GraphQL, <a href="http://htmx.org">htmx</a>, daisyUI, <a href="http://nixos.org">nix</a></p>
 
         </article>
 
