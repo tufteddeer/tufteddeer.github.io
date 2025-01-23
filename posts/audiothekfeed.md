@@ -6,6 +6,8 @@ category = "Projects"
 
 # Audiothek-feed
 
+Atom feed generator for the ARD Audiothek.
+
 ## About
 
 The [ARD Audiothek](https://www.ardaudiothek.de) is the audio content platform of the german public broadcasting service ARD.
