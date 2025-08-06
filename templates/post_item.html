@@ -1,0 +1,20 @@
+{% macro postitem(page) %}
+<section>
+  <h1>
+    <a href="{{ page.permalink }}">
+      {{ page.title | safe }}
+    </a>
+  </h1>
+
+  <p><time>{{ page.date | date(format="%b %d, %y") }}</time>
+  in
+  
+  {% for category in page.taxonomies["categories"] %}
+    #<a href={{ get_taxonomy_url(kind="categories", name=category, lang=page.lang) }}>{{category}}</a>
+  {% endfor %}
+  </p>
+  <p>
+      {{ page.summary | safe }}
+  </p>
+</section>
+{% endmacro postitem %}

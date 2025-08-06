@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{%block title %} {%endblock title %}</title>
-        <link rel="stylesheet" href="/static/style.css">
-        <link
-            rel="stylesheet"
-            href="/static/pico.classless.min.css"
-        >
+        <meta charset="utf-8">
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+        <link rel="stylesheet" href="/classless.css"/>
+        <link rel="stylesheet" href="/style.css"/>
     </head>
     <body>
         <header>
-            <h1><a href="/">TuftedDeer</a></h1>
             <nav>
-            <ul>
-            
-                {% for cat in post_categories %}
-                    <li>
-                        <a href="/{{ cat }}.html"> {{ cat }} </a>
-                        
-                    </li>   
-                {% endfor %}
+                <ul>
+                    {% set categories = get_taxonomy(kind="categories") %}
+                    {% for c in categories.items %}
 
-            </ul>
-            <ul>
-            <li>
-                <a href="https://github.com/tufteddeer"> GitHub </a>
-            </li>
-            </ul>
+                        <li><a href={{ c.permalink }}>#{{ c.name }}</a></li>
+                    {% endfor %}
+                    <li><a href="https://github.com/tufteddeer">GitHub</a></li>
+                </ul>
             </nav>
-            
-        </header>
-        
-        <main>
-        {% block content %}
+            <h1><a href = {{ config.base_url }}>{{ config.title }}</a></h1>
+            <hr>
 
-        {% endblock content %}
-        
-        
+        </header>
+        <main>
+                {% block main %}
+                {% endblock main %}
         </main>
-        <footer>Made with ❤️, generated with <a href="https://github.com/tufteddeer/markhor">markhor</a>, styled with <a href="https://picocss.com">Pico css</a> </footer>
-    </body>
+           
+        <footer>
+            Made with <a href="https://www.getzola.org/">Zola</a> and <a href="https://classless.de">Classless.css</a>
+        </footer>
+  </body>
 </html>

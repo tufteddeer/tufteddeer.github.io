@@ -1,8 +1,22 @@
-video {
-    width: 100%;
+nav {
+    background-color: unset;
+}
+body > nav, header nav {
+    box-shadow: unset;
 }
 
-h1 a {
-    color: white;
-    text-decoration: none;
+a.zola-anchor {
+    color: unset;
+}
+
+.zola-anchor > svg {
+    height: 0.9em;
+}
+
+ul > li {
+    list-style-type: "# ";
+}
+
+h1 > a {
+    color: unset;
 }

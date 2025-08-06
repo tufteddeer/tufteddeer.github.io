@@ -1,0 +1,16 @@
+{% import "post_item.html" as macros %}
+{% extends "base.html" %}
+
+{% macro postitem(pages) %}
+    {% for page in pages | reverse %}
+        {{ macros::postitem(page=page) }}
+    {% endfor %}
+{% endmacro postitem %}
+
+{% block main %}
+<h2>#{{ term.name  }}</h2>
+
+
+{{ self::postitem(pages=term.pages) }}
+
+{% endblock main %}

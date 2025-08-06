@@ -1,12 +1,13 @@
----
++++
 title = "Audiothek feed"
-date = "2023-08-31"
-category = "Projects"
----
-
-# Audiothek-feed
+date =  "1970-01-01"
+[taxonomies]
+categories=["projects"]
++++
 
 Atom feed generator for the ARD Audiothek.
+
+<!-- more -->
 
 ## About
 
@@ -19,7 +20,7 @@ The frontend provides an input field where the show id or url can be entered.
 The generated feed url can be used with any Atom compatible podcast software.
 
 <figure>
-    <img src="/static/audiothekfeed.png" width="75%">
+    <img src="audiothekfeed.png" height="400">
 </figure>
 
 The backend is written in Rust using axum.

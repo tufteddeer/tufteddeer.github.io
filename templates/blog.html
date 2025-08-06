@@ -1,0 +1,8 @@
+{% import "post_item.html" as macros %}
+{% extends "base.html" %}
+
+{% block main %}
+        {% for page in section.pages %}
+            {{ macros::postitem(page=page) }}
+        {% endfor %}
+{% endblock main %}

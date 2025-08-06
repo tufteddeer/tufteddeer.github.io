@@ -1,12 +1,13 @@
----
++++
 title = "Markhor (static site generator)"
 date = "2022-03-21"
-category = "Projects"
----
-
-# Markhor
+[taxonomies]
+categories=["projects"]
++++
 
 Markhor is a static site generator written in Rust. 
+
+<!-- more -->
 
 ## Background
 I procrastinated building my own portfolio website for years now. In early 2022 I decided to delay it further when I started working on [Markhor](https://github.com/tufteddeer/markhor). The idea was to build my own static site generator that I could use for my website.

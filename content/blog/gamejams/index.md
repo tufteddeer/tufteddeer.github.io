@@ -1,12 +1,13 @@
----
++++
 title = "Gamejams"
 date = "2022-02-03"
-category = "Projects"
----
-# Games
+[taxonomies]
+categories=["projects"]
++++
 
 Together with some friends, I sometimes participate in Game Jams. As team _barely finished games_, we developed several small games, which we published on our [itch.io](https://barely-finished-games.itch.io) page and our [GitHub](https://github.com/BarelyFinishedGames).
 
+<!-- more -->
 
 ## Slimecaves
 
@@ -19,7 +20,7 @@ In Slimecaves, players move through rooms they create dynamically by breaking wa
 As always, my focus was on writing code. Besides other things, I implemented the attribute and status effect system for the player character, which laid the ground works for potions as well as the equipping of items I developed on top of it.
 
 <figure>
-    <img src="/static/potion.gif" height="100" alt="potion">
+    <img src="potion.gif" height="100" alt="potion">
     <figcaption>My shader effect for the potions</figcaption>
 </figure>
 

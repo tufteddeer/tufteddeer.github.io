@@ -1,14 +1,15 @@
----
-title = "StreamTime (Twitch.tv streaming schedules)"
++++
+title = "StreamTime (streaming schedules for Twitch.tv)"
 date = "2022-06-12"
-category = "Projects"
----
-
-# StreamTime
+[taxonomies]
+categories=["projects"]
++++
 
 StreamTime lets [Twitch](https://twitch.tv) users see the planned streams of their favourite streamers on a single page.
 
 [Visit the website](https://www.stream-time.xyz/)
+
+<!-- more -->
 
 Code on [GitHub](https://github.com/StreamingTime/StreamTime)
 

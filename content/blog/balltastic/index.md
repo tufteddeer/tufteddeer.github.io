@@ -1,12 +1,9 @@
----
++++
 title = "Balltastic"
 date = "2022-05-18"
-category = "Projects"
----
-
-# Balltastic
-
-
+[taxonomies]
+categories=["projects"]
++++
 
 In 2021 I took a class in 3D engine technology and made a "Roll a ball" clone with a friend.
 The goal is to manouver the ball through the levels and collect as much stars as possible.
@@ -14,6 +11,7 @@ Players are not only challenged by the level itself, there are many other threat
 
 [Play the game](https://tufteddeer.github.io/balltastic-web)
 
+<!-- more -->
 
 ## Controls
 
@@ -37,14 +35,14 @@ Players are not only challenged by the level itself, there are many other threat
 One of the things I am really proud of are the turtle enemies. They use a NavMesh to follow the player on sight and attack when they are close enough. An Animator Controller is used as state machine to switch between the _idle_, _follow_ and _attack_ state and play the appropriate animations.
 
 
-<video controls src="/static/balltastic/turtle.webm"/></video>
+<video controls src="turtle.webm"/></video>
 
 
 I also made an editor tool for our bridges. Bridges are level elements that are made of multiple planks connected with joints. The player can roll over them, but when they are too fast or even jump at them, they will break.
 
 The tool allows us to place a bridge in the level and individually change the number of planks, the space between them and the maximum force it can withstand.
 
-<video controls src="/static/balltastic/bridge_editor.webm"></video>
+<video controls src="bridge_editor.webm"></video>
 
 ## Technologies used
 

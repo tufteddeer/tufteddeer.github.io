@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+        <article>
+            <h1> {{ page.title | safe }}</h1>
+
+            <p>
+                <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+                in
+
+                {% for category in page.taxonomies["categories"] %}
+                    {% set url = get_taxonomy_url(kind="categories", name=category, lang=page.lang) %}
+                <a href={{ url }}>{{category}}</a>
+                {% endfor %}
+            </p>
+            
+            <hr>
+
+            {{ page.content | safe }}
+        </article>
+
+{% endblock main %}
