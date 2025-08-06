@@ -12,6 +12,9 @@ jobs:
       - uses: cachix/install-nix-action@v30
       - uses: actions/checkout@v4
 
+      - name: Build
+        run: nix build
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
