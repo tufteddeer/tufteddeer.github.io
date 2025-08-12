@@ -20,3 +20,7 @@ ul > li {
 h1 > a {
     color: unset;
 }
+
+a {
+    text-decoration: none !important;
+}
